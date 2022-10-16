@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ionicons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Red+Hat+Text:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script defer src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <nav class="navbar">
+        <div class="navbar__language">
+            <button class="actualLanguage">cz</button>
+            <div></div>
+            <button>en</button>
+        </div>
+        <menu class="navbar__menu">
+            <a id="nav1" href="#about">O umělci</a>
+            <a id="nav2" href="#exhibitions">Výstavy</a>
+            <a id="nav3" href="#contact">Kontakt</a>
+        </menu>
+    </nav>
+
+    <main class="main">
+        <hr>
+        <h1>Nela Maruškevičová</h1>
+        <hr>
+        <section class="main__gallery">
+            <div class="main__gallery__line">
+                <picture>
+                    <img class="img" id="1" src="assets/images/z_vln_slunce.jpg" alt="Z Vln Slunce, 2022">
+                    <p>Z Vln Slunce, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="4" src="assets/images/pohyb_krouzku.jpg" alt="Pohyb kroužků, 2022">
+                    <p>Pohyb kroužků, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="7" src="assets/images/bez_nazvu.jpg" alt="Bez Názvu, 2021">
+                    <p>Bez Názvu, 2021</p>
+                </picture>
+                <!-- hide below -->
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/1.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/2.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/3.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/10.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/11.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <!-- hide above -->
+            </div>
+            <div class="main__gallery__line">
+                <picture>
+                    <img class="img" id="2" src="assets/images/beztize.jpg" alt="u">
+                    <p>Beztíže, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="5" src="assets/images/a_jednou_prijde_den.jpg" alt="u">
+                    <p>A Jednou Přijde Den, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="8" src="assets/images/medeny.jpg" alt="u">
+                    <p>Měděný, 2021</p>
+                </picture>
+                <!-- hide below -->
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/4.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/5.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/6.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/12.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <!-- hide above -->
+            </div>
+            <div class="main__gallery__line">
+                <picture>
+                    <img class="img" id="3" src="assets/images/svetlo_se_vraci.jpg" alt="u">
+                    <p>Světlo Se Vrací, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="6" src="assets/images/chladny_kruh.jpg" alt="u">
+                    <p>Chladný Kruh, 2022</p>
+                </picture>
+                <picture>
+                    <img class="img" id="9" src="assets/images/otevreni.jpg" alt="u">
+                    <p>Otevření, 2021</p>
+                </picture>
+                <!-- hide below -->
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/7.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/8.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/9.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <picture class="extension hidden">
+                    <img class="img" src="assets/images/13.jpg" alt="u">
+                    <p>unnamed</p>
+                </picture>
+                <!-- hide above -->
+            </div>
+        </section>
+
+        <button id="extendBtn" data-open="0" class="main__gallery__btn">
+            <ion-icon class="extendBtnIco main__gallery__btn__ico" name="chevron-down-outline"></ion-icon>
+            <span id="extendBtnText">Rozbalit další</span>
+            <ion-icon class="extendBtnIco main__gallery__btn__ico" name="chevron-down-outline"></ion-icon>
+        </button>
+
+        <hr class="main__hr">
+
+        <article class="main__about" id="about" >
+            <h2 class="h--2">O umělci</h2>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi. Provident commodi rerum cum, molestiae accusamus quos esse quasi laboriosam at mollitia quas veritatis? Dolor quas iure quidem tenetur nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla quibusdam iure asperiores sunt nam. Animi dolorem, suscipit ipsa molestias aperiam magni ducimus, nisi delectus deleniti ratione vero, voluptates illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. At vitae debitis quaerat hic, eaque, eos, est quis unde officiis animi eius sit autem blanditiis molestias obcaecati quos itaque quo consequuntur.</p>
+        </article>
+
+        <hr class="main__hr">
+
+        <article class="main__exhibition" id="exhibitions">
+            <h2 class="h--2">Výstavy</h2>
+            <h3>Výstavy a umělecké akce:</h3>
+            <table>
+                <tr>
+                    <td>2018</td>
+                    <td>Malířský duel – Kultivar Liberec</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Má Malá Útočiště – Galerie Kaplička, Jablonec nad Nisou</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Trial, ateliérová výstava – Seidlova vila Žďánice</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Emptiness – Liberec, spoluautorka Sholpan Ashirbeková</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Performance Covid Edition - skupinová performance v centru Brna</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>OBRŮSTAJÍCÍ/Místo co nás spojuje – Festival Tehláreň, Liptovský Mikuláš</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Spoluúčast na realizaci Art Week Liberec</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>KoExistence – Galerie Kaplička, Jablonec nad Nisou</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Spoluúčast na realizaci benefiční aukce FaVU Art pro Ukrajinu (1,2)</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Bezčasí – SOLO Offspace, spoluautorka Nelly El</td>
+                </tr>
+            </table>   
+        </article>
+
+        <hr class="main__hr">
+
+        <footer class="main__contact" id="contact">
+            <h2 class="h--2">Kontakt</h2>
+            <div class="main__contact__box">
+                <a href="tel:+420723479133">+420 723 479 133</a>
+                <a href="mailto:nellkevic@gmail.com">nellkevic@gmail.com</a>
+                <div class="main__contact__box__social">
+                    <a href="https://www.instagram.com/nellkevic/?hl=cs">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com/neli.maruskevicova/">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>     
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- modal -->
+    <aside id="modal" class="modal-hidden">
+        <picture>
+            <button id="modalCloseBtn" class="modal__close">
+                <ion-icon name="close-sharp"></ion-icon>
+            </button>
+            <img id="modalImg" src="" alt="">
+            <div class="modal__btns">
+                <button class="modal__btn" id="leftBtn">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="modal__btn" id="rightBtn">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </picture> 
+    </aside>
+    <!-- modal ends -->
+
+</body>
+</html>
