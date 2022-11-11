@@ -1,3 +1,5 @@
+AOS.init();
+
 const data = {
     1: {
         src: "z_vln_slunce.jpg",
@@ -79,7 +81,7 @@ function closeModal() {
 }
 
 function openModal(e) {
-    modalImg.src = `assets/bigImages/${data[e.target.id]["src"]}`
+    modalImg.src = `assets/mediumImages/${data[e.target.id]["src"]}`
     modal.classList.add("modal-shown");
     modal.classList.remove("modal-hidden");
 }
@@ -138,6 +140,26 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+
+let startTouch = 0;
+let endTouch = 0;
+
+modalImg.addEventListener("touchstart", (e) => {
+    startTouch = e.changedTouches[0].pageX;
+});
+
+modalImg.addEventListener("touchend", (x) => {
+    endTouch = x.changedTouches[0].pageX;
+
+    if (Math.abs(startTouch - endTouch) > 100) {
+        if (startTouch > endTouch) {
+            showRightImage();
+        } else {
+            showLeftImage();
+        }
+    }
+});
+
 //english - czech
 const english = {
     nav1: "About me",
@@ -150,9 +172,3 @@ const czech = {
     nav2: "Výstavy",
     nav2: "Kontakt"
 }
-
-
-
-
-
-

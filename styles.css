@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body * {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
@@ -17,8 +21,8 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     background-image: url(assets/background.jpg);
-    background-position: center center;
-    background-size: cover;
+    background-position: top;
+    background-size: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -122,6 +126,11 @@ body {
 .main__gallery__line > picture > img {
     width: 100%;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main__gallery__line > picture > p {
+    margin-top: 5px;
 }
 
 .main__gallery__btn {
@@ -187,9 +196,14 @@ body {
     display: none;
 }
 
-.modal__btns {
- position: absolute;
- bottom: 0;   
+#leftBtn {
+    position: absolute;
+    left: -40px;
+}
+
+#rightBtn {
+    position: absolute;
+    right: -40px;
 }
 
 .modal__btn, .modal__close {
@@ -293,5 +307,28 @@ td:first-child {
     color: black
 }
 
+@media (max-width: 1000px) {
+    #leftBtn {
+        left: 5px;
+    }
 
+    #rightBtn {
+        right: 5px;
+    }
+}
 
+@media (max-width: 500px) {
+
+    .main__gallery {
+        display: block;
+    }
+
+    .main__gallery__line {
+        margin-bottom: 30px;
+    }
+
+    #extendBtn:active {
+        scale: 1.1;
+    }
+
+}
