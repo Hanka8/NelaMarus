@@ -10,8 +10,8 @@ This website serves as an online portfolio for Nela Maruškevičová, an artist,
 - Contact information
 
 ## Technologies Used
-    - HTML
-    - CSS
-    - JavaScript
-    - AOS Library for animations
-    - Ionicons for icons
+- HTML
+- CSS
+- JavaScript
+- AOS Library for animations
+- Ionicons for icons
